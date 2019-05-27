@@ -1,21 +1,21 @@
-# The Modern JavaScript Tutorial in Norvegian
+# Den moderne JavaScript Opplæringsdelen på Norsk
 
-This repository hosts the translation of <https://javascript.info> in Norvegian.
+Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.info> på Norsk.
 
 
-**That's how you can contribute:**
+**Slik kan du bidra:**
 
-- See the [Norvegian Translate Progress](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
-- Choose an unchecked article you'd like to translate.
-- Add a comment with the article title to the issue, e.g. `An Introduction to JavaScript`.
-    - Our bot will mark it in the issue, for everyone to know that you're translating it.
-    - Your comment should contain only the title.
-- Fork the repository, translate and send a PR when done.
-    - PR title should match article title, the bot will write it's number into the issue.
+- Sjekk ut [Norsk Oversettelses fremdrift]() https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
+- Velg en umarkert artikkel du har lyst til å oversette.
+- Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
+    - Bot'en vår vil markere denne issue, så alle kan se at du jobber med å oversette den.
+    - Kommentaren din skal kun inneholde tittelen.
+- Fork dette repository, oversett artikkelen og send en PR når du er ferdig.
+    - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
+    
+Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
 
-Please kindly allow maintainers to review and merge or request changes in your translation.
-   
-If maintainers do not respond, or if you'd like to become a maintainer, write us at the [main repo](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
+Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
     
 **Let others know what you're translating, in message boards or chats in your language. Invite them to join!**
 
