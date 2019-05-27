@@ -5,7 +5,7 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
 
 **Slik kan du bidra:**
 
-- Sjekk ut [Norsk Oversettelses fremdrift]() https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
+- Sjekk ut [Norsk Oversettelses fremdrift](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
     - Bot'en vår vil markere denne issue, så alle kan se at du jobber med å oversette den.
