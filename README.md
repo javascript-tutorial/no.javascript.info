@@ -16,26 +16,26 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
 Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
 
 Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
-    
-**Let others know what you're translating, in message boards or chats in your language. Invite them to join!**
 
-🎉 Thank you!
+**La andre få vite hva du oversetter, i meldingbordet, eller chat på ditt språk. Inviter de til å bli med!**
 
-Your name and the contribution size will appear in the "About project" page when the translation gets published.
+🎉 Tusen takk!
 
-P.S. The full list of languages can be found at <https://javascript.info/translate>.
+Ditt navn og størrelse på ditt bidrag vil dukke opp i "om prosjekt" delen av nettsiden når dette blir publisert.
 
-## Structure
+P.S. Hele listen av språk kan finnes her <https://javascript.info/translate>.
 
-Every chapter, an article or a task resides in its own folder.
+## Struktur
 
-The folder is named `N-url`, where `N` – is the number for sorting (articles are ordered), and `url` is the URL-slug on the site.
+Hvert kapittel, en artikkel eller oppgave holder til i sin egen mappe.
 
-The folder has one of files:
+Mappen sitt har navnet `N-url`, hvor `N` - står for nummer for hvordan (artiklene organiseres), og `url` er URL-stien på siden.
 
-- `index.md` for a section,
-- `article.md` for an article,
-- `task.md` for a task formulation (+`solution.md` with the solution text if any).
+Hver mappe har en av følgende filer:
+
+- `index.md` for en seksjon,
+- `article.md` for en artikkel,
+- `task.md` for en oppgave (+`solution.md` med løsningsteksten hvis det finnes en).
 
 A file starts with the `# Title Header`, and then the text in Markdown-like format, editable in a simple text editor. 
 
