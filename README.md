@@ -5,7 +5,7 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
 
 **Slik kan du bidra:**
 
-- Sjekk ut [Norsk Oversettelses fremdrift](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
+- Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
     - Bot'en vår vil markere denne issue, så alle kan se at du jobber med å oversette den.
@@ -21,7 +21,7 @@ Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, 
 
 🎉 Tusen takk!
 
-Ditt navn og størrelse på ditt bidrag vil dukke opp i "om prosjekt" delen av nettsiden når dette blir publisert.
+Ditt navn og størrelsen på ditt bidrag vil dukke opp i "om prosjekt" delen av nettsiden når dette blir publisert.
 
 P.S. Hele listen av språk kan finnes her <https://javascript.info/translate>.
 
@@ -37,29 +37,29 @@ Hver mappe har en av følgende filer:
 - `article.md` for en artikkel,
 - `task.md` for en oppgave (+`solution.md` med løsningsteksten hvis det finnes en).
 
-A file starts with the `# Title Header`, and then the text in Markdown-like format, editable in a simple text editor. 
+En fil starter med `# Tittel overskrift`, og så er teksten skrevet i Markdown-lignende format, redigerbar i hvilken som helst text-editor.
 
-Additional resources and examples for the article or the task, are also in the same folder.
+tilleggsressurser og eksempler laget for artikkelen eller oppgaven, er alltid på samme mappenivå.
 
-## Translation Tips
+## Oversetningstips
 
-Please keep line breaks and paragraphs "as is": don't add newlines and don't remove existing ones. Makes it easy to merge future changes from the English version into the translation. 
+Vær snill å hold linjeskift og avsnitt som de er: ikke legg til nye linjeskift og ikke fjern eksisterende linjeskift. Gjør det lettere for andre å slå sammen Pull requests i fremtiden.
 
-If you see that the English version can be improved – great, please send a PR to it.
+Hvis du ser at den Norske versjonen kan forbedres - flott, send inn en PR til den.
 
-### Terms
+### Vilkår
 
-- Some specification terms are not to be translated, e.g. "Function Declaration" can be left "as is".
-- For other terms like `resolved promise`, `slash`, `regexp`, and so on - look for a glossary, hopefully there's one for your language already. If not, look for translations in manuals, such as [MDN](https://developer.mozilla.org/en-US/).
+- Noen vilkårsspesifikasjoner skal ikke oversettes, f.eks "Function Declaration" kan være som "som den er".
+- For andre stikkord som `resolved promise`, `slash`, `regexp`, og så videre - foreslår å slå opp en ordliste, hvis det finnes en passende oversettelse for Norsk. Hvis ikke, se etter oversettelser som finnes fra eksisterer i lignende brukermanual, som [MDN](https://developer.mozilla.org/en-US/).
 
-### Text in Code Blocks
+### Tekst i Kodesnutter
 
-- Translate comments.
-- Translate user-messages and example strings.
-- Don't translate variables, classes, identifiers.
-- Ensure that the code works after the translation :)
+- Oversett kommentarer.
+- Oversett bruker-meldinger og eksempel stringverdier.
+- Ikke oversett variabelnavn, klasser, identifikatorer
+- Dobbelsjekk at koden fungerer etter at den er oversatt :)
 
-Example:
+Eksempel:
 
 ```js
 // Example
@@ -67,22 +67,22 @@ const text = "Hello, world";
 document.querySelector('.hello').innerHTML = text;
 ```
 
-✅ DO (translate comment):
+✅ OK (oversett kommentar):
 
 ```js
-// Ejemplo
-const text = 'Hola mundo';
+// Eksempel
+const text = 'Hei, verden';
 document.querySelector('.hello').innerHTML = text;
 ```
 
-❌ DON'T (translate class):
+❌ IKKE OK (oversett klasse):
 
 ```js
-// Ejemplo
-const text = 'Hola mundo';
-// ".hello" is a class
-// DO NOT TRANSLATE
-document.querySelector('.hola').innerHTML = text;
+// Eksempel
+const text = 'Hei, verden';
+// ".hello" er en klasse
+// IKKE OVERSETT DETTE
+document.querySelector('.hallo').innerHTML = text;
 ```
 
 ### External Links
