@@ -6,7 +6,11 @@ La oss se litt nærmere på hva som er så spesielt med JavaScript, hva vi kan o
 
 ## Hva er JavaScript?
 
+<<<<<<< HEAD
 *JavaScript* var egentlig ment for å *"gi hjemmesider mer liv"*.
+=======
+The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+>>>>>>> 08734734021aa128c13da2382fe8fa062677bb9f
 
 Programmer skrevet i JavaScript kalles for *scripts*. De kan skrives rett inn i en nettsides's HTML og kjører automatisk så fort siden blir lastet.
 
@@ -75,7 +79,11 @@ Eksempler på slike begrensninger inkluderer:
 
 - Forskjellige paneler/vinduer i en nettleser vet i utgangspunktet ingenting om hverandre. Noenganger gjør de det, for eksempel når et vindu bruker JavaScript til å åpne et annet vindu. Men selv i dette tilfellet, JavaScript fra en side til en kan ikke aksessere et annet vindu hvis det kommer fra forskjellige sider (fra et annet domene, protokoll eller port).
 
+<<<<<<< HEAD
     Dette er kalt "Same Origin Policy". For å jobbe rundt dette, må *begge sidene* inneholde en spesiell JavaScript kode som behandler denne utvekslingen av data.
+=======
+    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+>>>>>>> 08734734021aa128c13da2382fe8fa062677bb9f
 
     Denne begrensningen er, igjen satt på plass med brukerens trygghet i tankene. En side fra `http://hvilkensomhelstside.no` som en bruker har åpnet kan overhodet ikke være i stand til å aksessere et annet panel med URL'en `http://gmail.com` og stjele informasjon derfra.
 
