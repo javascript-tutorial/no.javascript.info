@@ -85,29 +85,29 @@ const text = 'Hei, verden';
 document.querySelector('.hallo').innerHTML = text;
 ```
 
-### External Links
+### Eksterne linker
 
-If an external link is to Wikipedia, e.g. `https://en.wikipedia.org/wiki/JavaScript`, and a version of that article exists in your language that is of decent quality, link to that version instead.
+Hvis en ekstern lenke fører til Wikipedia, f.eks `https://en.wikipedia.org/wiki/JavaScript`, og en versjon av den artikkelen eksisterer på ditt språk, og er av god kvalitet kan det lenkes til den artikkelen istedenfor.
 
-Example:
+Eksempel:
 
 ```md
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is a programming language.
 ```
 
-✅ OK (en -> es):
+✅ OK (en -> no):
 
 ```md
-[JavaScript](https://es.wikipedia.org/wiki/JavaScript) es un lenguaje de programación.
+[JavaScript](https://no.wikipedia.org/wiki/JavaScript) er et programmeringsspråk.
 ```
 
-For links to MDN, a partially translated version is ok.
+Når det gjelder lenker til MDN, er en delvis oversatt artikkel ok.
 
-If a linked article has no translated version, leave the link "as is".
+Hvis det er lenket til en artikkel som ikke har en oversatt versjon, la den originale lenken være som den er.
 
 ### Metadata
 
-Some files, usually tasks, have YAML metadata at the top, delimited by `---`:
+Noen filer, vanligvis oppgaver, har YAML metadata definert i toppen, markert med `---`:
 
 ```md
 importance: 5
@@ -116,20 +116,20 @@ importance: 5
 ...
 ```
 
-Please don't translate "importance" (and other top metadata).
+Vennligst ikke oversett "importance" (og andre metadata definert i toppen).
 
-### Anchors
+### Ankerpunkter
 
-Some headers have `[#anchor]` at the end, e.g.
+Noen overskrifter har `[#anchor]` på slutten, f.eks.
 
 ```md
 ## Spread operator [#spread-operator]
 ```
 
-Please don't translate or remove the `[#...]` part, it's for URL anchors.
+Vennligst ikke oversett eller fjern `[#...]` delen, dette er for URL ankerpunkter.
 
-## Running locally
+## Kjøring lokalt
 
-You can run the tutorial server locally to see how the translation looks.
+Du kan kjøre opplæringsdelens server lokalt for å se hvordan oversettelsene dine ser ut.
 
-The server and install instructions are at <https://github.com/javascript-tutorial/server>. 
+Serveren og installasjonsinstrukser kan finnes her: <https://github.com/javascript-tutorial/server>. 
