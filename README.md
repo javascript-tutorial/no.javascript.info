@@ -1,65 +1,65 @@
-# The Modern JavaScript Tutorial in Norvegian
+# Den moderne JavaScript Opplæringsdelen på Norsk
 
-This repository hosts the translation of <https://javascript.info> in Norvegian.
+Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.info> på Norsk.
 
 
-**That's how you can contribute:**
+**Slik kan du bidra:**
 
-- See the [Norvegian Translate Progress](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
-- Choose an unchecked article you'd like to translate.
-- Add a comment with the article title to the issue, e.g. `An Introduction to JavaScript`.
-    - Our bot will mark it in the issue, for everyone to know that you're translating it.
-    - Your comment should contain only the title.
-- Fork the repository, translate and send a PR when done.
-    - PR title should match article title, the bot will write it's number into the issue.
-
-Please kindly allow maintainers to review and merge or request changes in your translation.
-   
-If maintainers do not respond, or if you'd like to become a maintainer, write us at the [main repo](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
+- Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
+- Velg en umarkert artikkel du har lyst til å oversette.
+- Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
+    - Bot'en vår vil markere denne issue, så alle kan se at du jobber med å oversette den.
+    - Kommentaren din skal kun inneholde tittelen.
+- Fork dette repository, oversett artikkelen og send en PR når du er ferdig.
+    - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
     
-**Let others know what you're translating, in message boards or chats in your language. Invite them to join!**
+Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
 
-🎉 Thank you!
+Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
 
-Your name and the contribution size will appear in the "About project" page when the translation gets published.
+**La andre få vite hva du oversetter, i meldingbordet, eller chat på ditt språk. Inviter de til å bli med!**
 
-P.S. The full list of languages can be found at <https://javascript.info/translate>.
+🎉 Tusen takk!
 
-## Structure
+Ditt navn og størrelsen på ditt bidrag vil dukke opp i "om prosjekt" delen av nettsiden når dette blir publisert.
 
-Every chapter, an article or a task resides in its own folder.
+P.S. Hele listen av språk kan finnes her <https://javascript.info/translate>.
 
-The folder is named `N-url`, where `N` – is the number for sorting (articles are ordered), and `url` is the URL-slug on the site.
+## Struktur
 
-The folder has one of files:
+Hvert kapittel, en artikkel eller oppgave holder til i sin egen mappe.
 
-- `index.md` for a section,
-- `article.md` for an article,
-- `task.md` for a task formulation (+`solution.md` with the solution text if any).
+Mappen sitt har navnet `N-url`, hvor `N` - står for nummer for hvordan (artiklene organiseres), og `url` er URL-stien på siden.
 
-A file starts with the `# Title Header`, and then the text in Markdown-like format, editable in a simple text editor. 
+Hver mappe har en av følgende filer:
 
-Additional resources and examples for the article or the task, are also in the same folder.
+- `index.md` for en seksjon,
+- `article.md` for en artikkel,
+- `task.md` for en oppgave (+`solution.md` med løsningsteksten hvis det finnes en).
 
-## Translation Tips
+En fil starter med `# Tittel overskrift`, og så er teksten skrevet i Markdown-lignende format, redigerbar i hvilken som helst text-editor.
 
-Please keep line breaks and paragraphs "as is": don't add newlines and don't remove existing ones. Makes it easy to merge future changes from the English version into the translation. 
+tilleggsressurser og eksempler laget for artikkelen eller oppgaven, er alltid på samme mappenivå.
 
-If you see that the English version can be improved – great, please send a PR to it.
+## Oversetningstips
 
-### Terms
+Vær snill å hold linjeskift og avsnitt som de er: ikke legg til nye linjeskift og ikke fjern eksisterende linjeskift. Gjør det lettere for andre å slå sammen Pull requests i fremtiden.
 
-- Some specification terms are not to be translated, e.g. "Function Declaration" can be left "as is".
-- For other terms like `resolved promise`, `slash`, `regexp`, and so on - look for a glossary, hopefully there's one for your language already. If not, look for translations in manuals, such as [MDN](https://developer.mozilla.org/en-US/).
+Hvis du ser at den Norske versjonen kan forbedres - flott, send inn en PR til den.
 
-### Text in Code Blocks
+### Vilkår
 
-- Translate comments.
-- Translate user-messages and example strings.
-- Don't translate variables, classes, identifiers.
-- Ensure that the code works after the translation :)
+- Noen vilkårsspesifikasjoner skal ikke oversettes, f.eks "Function Declaration" kan være som "som den er".
+- For andre stikkord som `resolved promise`, `slash`, `regexp`, og så videre - foreslår å slå opp en ordliste, hvis det finnes en passende oversettelse for Norsk. Hvis ikke, se etter oversettelser som finnes fra eksisterer i lignende brukermanual, som [MDN](https://developer.mozilla.org/en-US/).
 
-Example:
+### Tekst i Kodesnutter
+
+- Oversett kommentarer.
+- Oversett bruker-meldinger og eksempel stringverdier.
+- Ikke oversett variabelnavn, klasser, identifikatorer
+- Dobbelsjekk at koden fungerer etter at den er oversatt :)
+
+Eksempel:
 
 ```js
 // Example
@@ -67,47 +67,47 @@ const text = "Hello, world";
 document.querySelector('.hello').innerHTML = text;
 ```
 
-✅ DO (translate comment):
+✅ OK (oversett kommentar):
 
 ```js
-// Ejemplo
-const text = 'Hola mundo';
+// Eksempel
+const text = 'Hei, verden';
 document.querySelector('.hello').innerHTML = text;
 ```
 
-❌ DON'T (translate class):
+❌ IKKE OK (oversett klasse):
 
 ```js
-// Ejemplo
-const text = 'Hola mundo';
-// ".hello" is a class
-// DO NOT TRANSLATE
-document.querySelector('.hola').innerHTML = text;
+// Eksempel
+const text = 'Hei, verden';
+// ".hello" er en klasse
+// IKKE OVERSETT DETTE
+document.querySelector('.hallo').innerHTML = text;
 ```
 
-### External Links
+### Eksterne linker
 
-If an external link is to Wikipedia, e.g. `https://en.wikipedia.org/wiki/JavaScript`, and a version of that article exists in your language that is of decent quality, link to that version instead.
+Hvis en ekstern lenke fører til Wikipedia, f.eks `https://en.wikipedia.org/wiki/JavaScript`, og en versjon av den artikkelen eksisterer på ditt språk, og er av god kvalitet kan det lenkes til den artikkelen istedenfor.
 
-Example:
+Eksempel:
 
 ```md
 [JavaScript](https://en.wikipedia.org/wiki/JavaScript) is a programming language.
 ```
 
-✅ OK (en -> es):
+✅ OK (en -> no):
 
 ```md
-[JavaScript](https://es.wikipedia.org/wiki/JavaScript) es un lenguaje de programación.
+[JavaScript](https://no.wikipedia.org/wiki/JavaScript) er et programmeringsspråk.
 ```
 
-For links to MDN, a partially translated version is ok.
+Når det gjelder lenker til MDN, er en delvis oversatt artikkel ok.
 
-If a linked article has no translated version, leave the link "as is".
+Hvis det er lenket til en artikkel som ikke har en oversatt versjon, la den originale lenken være som den er.
 
 ### Metadata
 
-Some files, usually tasks, have YAML metadata at the top, delimited by `---`:
+Noen filer, vanligvis oppgaver, har YAML metadata definert i toppen, markert med `---`:
 
 ```md
 importance: 5
@@ -116,20 +116,20 @@ importance: 5
 ...
 ```
 
-Please don't translate "importance" (and other top metadata).
+Vennligst ikke oversett "importance" (og andre metadata definert i toppen).
 
-### Anchors
+### Ankerpunkter
 
-Some headers have `[#anchor]` at the end, e.g.
+Noen overskrifter har `[#anchor]` på slutten, f.eks.
 
 ```md
 ## Spread operator [#spread-operator]
 ```
 
-Please don't translate or remove the `[#...]` part, it's for URL anchors.
+Vennligst ikke oversett eller fjern `[#...]` delen, dette er for URL ankerpunkter.
 
-## Running locally
+## Kjøring lokalt
 
-You can run the tutorial server locally to see how the translation looks.
+Du kan kjøre opplæringsdelens server lokalt for å se hvordan oversettelsene dine ser ut.
 
-The server and install instructions are at <https://github.com/javascript-tutorial/server>. 
+Serveren og installasjonsinstrukser kan finnes her: <https://github.com/javascript-tutorial/server>. 
