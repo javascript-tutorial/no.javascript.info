@@ -5,6 +5,7 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
 
 **Slik kan du bidra:**
 
+<<<<<<< HEAD
 - Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
@@ -14,6 +15,9 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
     - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
     
 Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
+=======
+See <https://javascript.info/translate> for the details.
+>>>>>>> a0266c574c0ab8a0834dd38ed65e7e4ee27f9cdb
 
 Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
 
