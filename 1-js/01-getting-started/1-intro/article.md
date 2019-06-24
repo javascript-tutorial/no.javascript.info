@@ -6,7 +6,11 @@ La oss se litt nærmere på hva som er så spesielt med JavaScript, hva vi kan o
 
 ## Hva er JavaScript?
 
+<<<<<<< HEAD
 *JavaScript* var egentlig ment for å *"gi hjemmesider mer liv"*.
+=======
+The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+>>>>>>> 9b5c1c95ec8a466150e519b0e94748717c747b09
 
 Programmer skrevet i JavaScript kalles for *scripts*. De kan skrives rett inn i en nettsides's HTML og kjører automatisk så fort siden blir lastet.
 
@@ -75,7 +79,11 @@ Eksempler på slike begrensninger inkluderer:
 
 - Forskjellige paneler/vinduer i en nettleser vet i utgangspunktet ingenting om hverandre. Noenganger gjør de det, for eksempel når et vindu bruker JavaScript til å åpne et annet vindu. Men selv i dette tilfellet, JavaScript fra en side til en kan ikke aksessere et annet vindu hvis det kommer fra forskjellige sider (fra et annet domene, protokoll eller port).
 
+<<<<<<< HEAD
     Dette er kalt "Same Origin Policy". For å jobbe rundt dette, må *begge sidene* inneholde en spesiell JavaScript kode som behandler denne utvekslingen av data.
+=======
+    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+>>>>>>> 9b5c1c95ec8a466150e519b0e94748717c747b09
 
     Denne begrensningen er, igjen satt på plass med brukerens trygghet i tankene. En side fra `http://hvilkensomhelstside.no` som en bruker har åpnet kan overhodet ikke være i stand til å aksessere et annet panel med URL'en `http://gmail.com` og stjele informasjon derfra.
 
@@ -110,6 +118,7 @@ En haug av nye språk har nylig dukket opp, som er *transpilert* (konvertert) ti
 
 Moderne verktøy gjør transpileringen veldig rask og forutsigbar, faktisk så lar dette utviklere å skrive kode på et annet språk som blir automatisk konvertert "under panseret".
 
+<<<<<<< HEAD
 Dette er eksempler på slike språk:
 
 - [CoffeeScript](http://coffeescript.org/) er en "syntaktisk sukker" for JavaScript. Det introduserer kortere syntax, som lar oss skrive klarer og mer presis kode. Ruby utviklere er vanligvis mer glad i dette.
@@ -117,6 +126,17 @@ Dette er eksempler på slike språk:
 - [Dart](https://www.dartlang.org/) er et selvstendig språk som har sin egen motor som kjører ukjente miljøer for nettleseren (som mobilapplikasjoner). Det var i utgangspunktet lagt frem av Google som en erstatter for JavaScript, men foreløpig krever nettlesere at Dart transpileres til JavaScript akkurat som de andre nevnt ovenfor.
 
 Det finnes flere selvfølgelig. Men selv om vi bruker noen av disse språkene, er det lurt av oss å kjenne JavaScript for å vite hva vi egentlig driver med.
+=======
+The most used are
+Examples of such languages:
+
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+
+There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+>>>>>>> 9b5c1c95ec8a466150e519b0e94748717c747b09
 
 ## Summary
 ## Oppsummering
