@@ -81,7 +81,7 @@ Eksempler på slike begrensninger inkluderer:
 
 - JavaScript kan med letthet kommunisere med en tjener over nettet hvor den nåværende siden kom fra. Men dets egenskap til å motta data fra andre sider/domener er veldig tungvint, men det er mulig, dette krever eksplisitt tillatelse (uttrykt via HTTP headere) fra den eksterne siden. Igjen, dette er sikkerhetsbegrensning.
 
-![](limitations.png)
+![](limitations.svg)
 
 Slike begrensninger eksisterer ikke hvis JavaScript brukes på utsiden av nettleseren, for eksempel på en tjener. Moderne nettlesere tillater også bruk utvidelser som kan spørre om utvidede tillatelser.
 
