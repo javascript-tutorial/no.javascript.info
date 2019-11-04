@@ -6,7 +6,11 @@ La oss se litt nærmere på hva som er så spesielt med JavaScript, hva vi kan o
 
 ## Hva er JavaScript?
 
+<<<<<<< HEAD
 *JavaScript* var egentlig ment for å *"gi hjemmesider mer liv"*.
+=======
+The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
 Programmer skrevet i JavaScript kalles for *scripts*. De kan skrives rett inn i en nettsides's HTML og kjører automatisk så fort siden blir lastet.
 
@@ -14,8 +18,13 @@ Scripts er utdelt og kjørt som ren tekst. De trenger altså ingen forberedelser
 
 Med dette øyemed, er JavaScript veldig annerledes fra et annet språk kalt [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
 
+<<<<<<< HEAD
 ```smart header="Why <u>Java</u>Script?"
 Når JavaScript ble skapt, hadde det i utgangspunktet navnet: "LiveScript". Men Java var veldig populært på den tiden, så det ble bestemt at å presentere et nytt programmeringsspråk som en "lillebror" til Java ville være en god ide.
+=======
+```smart header="Why is it called <u>Java</u>Script?"
+When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
 Men etterhvert som det utviklet seg ble JavaScript et helt uavhengig programmeringsspårk med sitt eget sett med spesifikasjoner kalt [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), og nå har det ingenting med Java å gjøre i det hele tatt.
 ```
@@ -75,11 +84,19 @@ Eksempler på slike begrensninger inkluderer:
 
 - Forskjellige paneler/vinduer i en nettleser vet i utgangspunktet ingenting om hverandre. Noenganger gjør de det, for eksempel når et vindu bruker JavaScript til å åpne et annet vindu. Men selv i dette tilfellet, JavaScript fra en side til en kan ikke aksessere et annet vindu hvis det kommer fra forskjellige sider (fra et annet domene, protokoll eller port).
 
+<<<<<<< HEAD
     Dette er kalt "Same Origin Policy". For å jobbe rundt dette, må *begge sidene* inneholde en spesiell JavaScript kode som behandler denne utvekslingen av data.
+=======
+    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
     Denne begrensningen er, igjen satt på plass med brukerens trygghet i tankene. En side fra `http://hvilkensomhelstside.no` som en bruker har åpnet kan overhodet ikke være i stand til å aksessere et annet panel med URL'en `http://gmail.com` og stjele informasjon derfra.
 
+<<<<<<< HEAD
 - JavaScript kan med letthet kommunisere med en tjener over nettet hvor den nåværende siden kom fra. Men dets egenskap til å motta data fra andre sider/domener er veldig tungvint, men det er mulig, dette krever eksplisitt tillatelse (uttrykt via HTTP headere) fra den eksterne siden. Igjen, dette er sikkerhetsbegrensning.
+=======
+![](limitations.svg)
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
 ![](limitations.svg)
 
@@ -96,9 +113,13 @@ Dette er de *tre* minst gode ting om JavaScript:
 ```
 JavaScript er den eneste nettleser teknologien som kombinerer disse tre tingene.
 
+<<<<<<< HEAD
 Dette er det som gjør JavaScript unikt. Dette er grunnen til at JavaScript er det mest utstrakte verktøyet for utvikling av grensesnitt i nettleseren.
 
 Imens du har planer om å lære deg en teknologi, er det gunstig å sjekke dens perspektiver. Så la oss fortsette til de moderne trendene som påvirker den, inkluderende nye språk og ny nettleser-funksjonalitet.
+=======
+That said, JavaScript also allows to create servers, mobile applications, etc.
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
 ## Språk "via" JavaScript
 
@@ -112,11 +133,20 @@ Moderne verktøy gjør transpileringen veldig rask og forutsigbar, faktisk så l
 
 Dette er eksempler på slike språk:
 
+<<<<<<< HEAD
 - [CoffeeScript](http://coffeescript.org/) er en "syntaktisk sukker" for JavaScript. Det introduserer kortere syntax, som lar oss skrive klarer og mer presis kode. Ruby utviklere er vanligvis mer glad i dette.
 - [TypeScript](http://www.typescriptlang.org/) er konsentrert rundt å legge til "streng datatyping" for å gjøre utvikling og drifting av komplekse systemer lettere. TypeScript er utviklet av Microsoft.
 - [Dart](https://www.dartlang.org/) er et selvstendig språk som har sin egen motor som kjører ukjente miljøer for nettleseren (som mobilapplikasjoner). Det var i utgangspunktet lagt frem av Google som en erstatter for JavaScript, men foreløpig krever nettlesere at Dart transpileres til JavaScript akkurat som de andre nevnt ovenfor.
 
 Det finnes flere selvfølgelig. Men selv om vi bruker noen av disse språkene, er det lurt av oss å kjenne JavaScript for å vite hva vi egentlig driver med.
+=======
+- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
+- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
+- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
+- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
+
+There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+>>>>>>> ec21af8aef6930388c06ee4cd8f8f6769f9d305b
 
 ## Summary
 ## Oppsummering
