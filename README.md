@@ -5,6 +5,7 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
 
 **Slik kan du bidra:**
 
+<<<<<<< HEAD
 - Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
@@ -14,6 +15,9 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
     - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
     
 Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
+=======
+See <https://javascript.info/translate> for the details.
+>>>>>>> 5b195795da511709faf79a4d35f9c5623b6dbdbd
 
 Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
 
@@ -113,6 +117,7 @@ Noen filer, vanligvis oppgaver, har YAML metadata definert i toppen, markert med
 importance: 5
 
 ---
+<<<<<<< HEAD
 ...
 ```
 
@@ -133,3 +138,7 @@ Vennligst ikke oversett eller fjern `[#...]` delen, dette er for URL ankerpunkte
 Du kan kjøre opplæringsdelens server lokalt for å se hvordan oversettelsene dine ser ut.
 
 Serveren og installasjonsinstrukser kan finnes her: <https://github.com/javascript-tutorial/server>. 
+=======
+♥  
+Ilya Kantor @iliakan
+>>>>>>> 5b195795da511709faf79a4d35f9c5623b6dbdbd
