@@ -1,9 +1,10 @@
-
-
 ```js
-let message = (login == 'Employee') ? 'Hello' :
-  (login == 'Director') ? 'Greetings' :
-  (login == '') ? 'No login' :
-  '';
+let melding =
+  login == "Ansatt"
+    ? "Hallo"
+    : login == "Direktør"
+    ? "God dag"
+    : login == ""
+    ? "Ingen login"
+    : "";
 ```
-

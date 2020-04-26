@@ -1,12 +1,11 @@
-**Yes, it will.**
+**Ja det vil den..**
 
-Any string except an empty one (and `"0"` is not empty) becomes `true` in the logical context.
+Husk at alle tekster (utenom en tom en `""`) vil bli lest som `true`.
 
-We can run and check:
+Vi kan kjøre koden og teste:
 
 ```js run
 if ("0") {
-  alert( 'Hello' );
+  alert("Heisann");
 }
 ```
-

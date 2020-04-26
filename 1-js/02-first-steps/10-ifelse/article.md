@@ -1,239 +1,244 @@
-# Conditional operators: if, '?'
+# Operant betinging: if, '?'
 
-Sometimes, we need to perform different actions based on different conditions.
+Ofte i koden vår ønsker vi å utføre forskjellige operasjoner basert på ulike betingelser.
 
-To do that, we use the `if` statement and the conditional (ternary) operator which we will be referring to as the “question mark” operator `?` for simplicity.
+For å bestemme hvilken kode som skal bli kjørt basert disse ulike betingelsene, bruker vi noe som kalles for "if" påstand (eng: if-statement). Man kan også benytte seg av en (ternary) operator, som vi vil skrive mer om etterpå.
 
-## The "if" statement
+## "if" påstand
 
-The `if` statement evaluates a condition and, if the condition's result is `true`, executes a block of code.
+Oppgaven til en `if` påstand er å evaluere en betingelse (condition). Om resultatet er sant (`true`) kjøres koden.
 
-For example:
+Eksempel:
 
 ```js run
-let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+let perAlder = 20
 
 *!*
-if (year == 2015) alert( 'You are right!' );
+if (perAlder > 19) alert("Per ikke er en tenåring lengre!");
 */!*
 ```
 
-In the example above, the condition is a simple equality check (`year == 2015`), but it can be much more complex.
-
-If we want to execute more than one statement, we have to wrap our code block inside curly braces:
+Ofte ønsker man å kjøre flere liner med kode om en betingelse er sann. For å gjøre dette pakker vi koden inn i krøllparantes (curly brackets) - `{}`.
 
 ```js
-if (year == 2015) {
-  alert( "That's correct!" );
-  alert( "You're so smart!" );
+if (perAlder > 19) {
+  alert("Per ikke er en tenåring lengre!");
+  alert("Nå er han en ung voksen.");
 }
 ```
 
-We recommend wrapping your code block with curly braces `{}` every time you use an `if` statement, even if there is only one statement to execute. Doing so improves readability.
+En god tommelfingerregel er å alltid pakke koden etter en "if" påstand inn i krøllparanteser. Dette gjør koden både mer konsekvent og lettere å lese.
 
-## Boolean conversion
+## Boolsk (boolean) "oversettelse"
 
-The `if (…)` statement evaluates the expression in its parentheses and converts the result to a boolean.
+Hver gang en `if (…)` påstand evaluerer betingelsen, gjør den koden inni om til en boolsk verdi.
 
-Let's recall the conversion rules from the chapter <info:type-conversions>:
+La oss friske opp hukommelsen med true/false oversettelsene fra kapittelet <info:type-conversions>:
 
-- A number `0`, an empty string `""`, `null`, `undefined`, and `NaN` all become `false`. Because of that they are called "falsy" values.
-- Other values become `true`, so they are called "truthy".
+- Tallet `0`, en tom tekst `""`, `null`, `undefined`, og `NaN` blir alle omgjort til `false`. De kalles for "falsy" verdier.
+- Alle andre verdier blir `true`, og kalles passende nok for "truthy" verdier.
 
-So, the code under this condition would never execute:
+Med denne kunnskapen, vet vi nå at koden under aldri vil bli kjørt:
 
 ```js
-if (0) { // 0 is falsy
+if (0) { // 0 er "falsy"
   ...
 }
 ```
 
-...and inside this condition -- it always will:
+...mens denne koden alltid vil bli kjørt:
 
 ```js
-if (1) { // 1 is truthy
+if (1) { // 1 er "truthy"
   ...
 }
 ```
 
-We can also pass a pre-evaluated boolean value to `if`, like this:
+Det er også lov å sette inn en allerede evaluert boolsk verdi inn i en `if` påstand:
 
 ```js
-let cond = (year == 2015); // equality evaluates to true or false
+let myndig = (alder == 17); // dobbel likhetstegn evaluerer true eller false
 
-if (cond) {
+if (myndig) {
   ...
 }
 ```
 
-## The "else" clause
+## Else "leddsetningen"
 
-The `if` statement may contain an optional "else" block. It executes when the condition is false.
+Det hender at man ofte vil kjøre én spesifikk kode hvis betingelsen i "if" påstanden stemmer, og ellers en annen kode hvis den ikke stemmer. For å gjøre dette bruker man noe som kalles for en "else statement". Denne kjøres uansett hvis "if" påstanden er false.
 
-For example:
-```js run
-let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
-
-if (year == 2015) {
-  alert( 'You guessed it right!' );
-} else {
-  alert( 'How can you be so wrong?' ); // any value except 2015
-}
-```
-
-## Several conditions: "else if"
-
-Sometimes, we'd like to test several variants of a condition. The `else if` clause lets us do that.
-
-For example:
+Eksempel:
 
 ```js run
-let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
+let alder = prompt("Hva er laveste aldersgrensen for å kjøre bil?", "");
 
-if (year < 2015) {
-  alert( 'Too early...' );
-} else if (year > 2015) {
-  alert( 'Too late' );
+if (alder == 18) {
+  alert("Helt korrekt!");
 } else {
-  alert( 'Exactly!' );
+  alert("Beklager, der tok du feil."); // alle verdier utenom 18
 }
 ```
 
-In the code above, JavaScript first checks `year < 2015`. If that is falsy, it goes to the next condition `year > 2015`. If that is also falsy, it shows the last `alert`.
+## Flere påstander: "else if"
 
-There can be more `else if` blocks. The final `else` is optional.
+Noen ganger ønsker man å teste flere betingelser. For å gjøre dette bruker vi `else if` påstander.
 
-## Ternary operator '?'
+For eksempel:
 
-Sometimes, we need to assign a variable depending on a condition.
+```js run
+let alder = prompt("Hva er laveste aldersgrensen for å kjøre bil?", "");
 
-For instance:
+if (alder == 18) {
+  alert("Helt korrekt!");
+} else if (alder < 18) {
+  alert("Da er du for ung");
+} else {
+  alert("Ikke laveste aldersgrense!");
+}
+```
+
+Fremgangsmåten til JavaScript er å først sjekke om `alder == 18)`. Hvis det er "falsy", sjekker den neste påstand som er `alder < 18`. Hvis denne viser seg også å være "falsy", kjører den koden som er i "else" påstanden.
+
+Merk: Det kan være flere `else if` påstander, men bare en `else` påstand.
+
+## Ternary operatør '?'
+
+Det hender at man ønsker å sette en variabel basert på en betingelse.
+
+For eksempel:
 
 ```js run no-beautify
-let accessAllowed;
-let age = prompt('How old are you?', '');
+let tilgang;
+let alder = prompt('Hvor galmmel er du?', '');
 
 *!*
-if (age > 18) {
-  accessAllowed = true;
+if (alder > 18) {
+  tilgang = true;
 } else {
-  accessAllowed = false;
+  tilgang = false;
 }
 */!*
 
-alert(accessAllowed);
+alert(tilgang);
 ```
 
-The so-called "ternary" or "question mark" operator lets us do that in a shorter and simpler way.
+For å gjøre dette på en enklere måte, kan vi bruke noe som heter "ternary operator". Noen kaller denne også for "question mark operator".
 
-The operator is represented by a question mark `?`.  The formal term "ternary" means that the operator has three operands. It is actually the one and only operator in JavaScript which has that many.
+Dettte er fordi denne operatøren brukes med et `?`-tegn. "Ternary" betyr at operatøren har tre "operander", som er tegnene som brukes i uttrykket. Denne er faktisk den eneste operatøren i JavaScript som har tre operander.
 
-The syntax is:
-```js
-let result = condition ? value1 : value2;
-```
-
-The `condition` is evaluated: if it's truthy then `value1` is returned, otherwise -- `value2`.
-
-For example:
+Syntaksen er som følger:
 
 ```js
-let accessAllowed = (age > 18) ? true : false;
+let resultat = betingelse ? verdi1 : verdi2;
 ```
 
-Technically, we can omit the parentheses around `age > 18`. The question mark operator has a low precedence, so it executes after the comparison `>`. 
+`Betingelsen` blir evaluert, og hvis den er "truthy" blir `verdi1`returnet, hvis ikke blir `verdi2` returnert.
 
-This example will do the same thing as the previous one:
+For eksempel:
 
 ```js
-// the comparison operator "age > 18" executes first anyway
-// (no need to wrap it into parentheses)
-let accessAllowed = age > 18 ? true : false;
+let tilgang = alder > 18 ? true : false;
 ```
 
-But parentheses make the code more readable, so we recommend using them.
+Teknisk sett kan vi sette paranteser rundt `alder > 18`. Men spørsmålstegnet i en ternary operatør har en lav rang, og vil dermed bli kjørt etter `>`-sjekken.
+
+Dette eksemplet vil fungere likt som det forrige:
+
+```js
+// sjekken "alder > 18" vil bli kjørt først uansett
+// (så det er ingen grunn til å pakke den inn i parantes)
+let tilgang = alder > 18 ? true : false;
+```
+
+Allikevel anbefales det å bruke paranteser selv om det ikke er nødvendig, ettersom det gjør koden lettere å lese.
 
 ````smart
-In the example above, you can avoid using the question mark operator because the comparison itself returns `true/false`:
+Merk: I eksempelet over hadde man egentlig ikke trengt å benytte seg av ternary operatøren, ettersom sjekken ville returnet `true/false` av seg selv.
 
 ```js
-// the same
-let accessAllowed = age > 18;
+// samme som over
+let tilgang = alder > 18;
 ```
 ````
 
-## Multiple '?'
+## Flere '?' på rad
 
-A sequence of question mark operators `?` can return a value that depends on more than one condition.
+Det er mulig å benytte seg av flere spørsmålstegn `?` for å returnere en verdi som baserer seg på flere betingelser.
 
-For instance:
+For eksempel:
+
 ```js run
-let age = prompt('age?', 18);
+let alder = prompt("alder?", 18);
 
-let message = (age < 3) ? 'Hi, baby!' :
-  (age < 18) ? 'Hello!' :
-  (age < 100) ? 'Greetings!' :
-  'What an unusual age!';
+let melding =
+  alder < 3
+    ? "Hei spedbarn!"
+    : age < 18
+    ? "Hallo!"
+    : age < 100
+    ? "God dag!"
+    : "For en høy alder!";
 
-alert( message );
+alert(melding);
 ```
 
-It may be difficult at first to grasp what's going on. But after a closer look, we can see that it's just an ordinary sequence of tests:
+Det kan vøre uvant å forstå hva som foregår her med en gang. Tar vi en nærmere kikk derimot, ser vi at det bare er flere sekvenser med betingelser:
 
-1. The first question mark checks whether `age < 3`.
-2. If true -- it returns `'Hi, baby!'`. Otherwise, it continues to the expression after the colon '":"', checking `age < 18`.
-3. If that's true -- it returns `'Hello!'`. Otherwise, it continues to the expression after the next colon '":"', checking `age < 100`.
-4. If that's true -- it returns `'Greetings!'`. Otherwise, it continues to the expression after the last colon '":"', returning `'What an unusual age!'`.
+1. Det første spørsmålstegnet sjekker om `alder < 3`.
+2. Om det er "true" returnerer den `'Hei spedbarn!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `alder < 18`.
+3. Om det "true", returner den `'Hallo!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `age < 100`.
+4. Om det "true", returner den `'God dag!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `'What an unusual age!'`.
 
-Here's how this looks using `if..else`:
+Her kan du se hvordan det ville sett ut med `if..else`:
 
 ```js
-if (age < 3) {
-  message = 'Hi, baby!';
-} else if (age < 18) {
-  message = 'Hello!';
-} else if (age < 100) {
-  message = 'Greetings!';
+if (alder < 3) {
+  melding = "Hei spedbarn!";
+} else if (alder < 18) {
+  melding = "Hallo!";
+} else if (alder < 100) {
+  melding = "God dag!";
 } else {
-  message = 'What an unusual age!';
+  melding = "For en høy alder!";
 }
 ```
 
-## Non-traditional use of '?'
+## Utradisjonell bruk av '?'
 
-Sometimes the question mark `?` is used as a replacement for `if`:
+Det hender at spørsmålstegnet `?` blir brukt som et alternativ for `if`:
 
 ```js run no-beautify
-let company = prompt('Which company created JavaScript?', '');
+let selskap = prompt('Hvilket selskap lagde JavaScript?', '');
 
 *!*
-(company == 'Netscape') ?
-   alert('Right!') : alert('Wrong.');
+(selskap == 'Netscape') ?
+   alert('Stemmer!') : alert('Feil.');
 */!*
 ```
 
-Depending on the condition `company == 'Netscape'`, either the first or the second expression after the `?` gets executed and shows an alert.
+Avhengig om påstanden `selskap == 'Netscape` stemmer eller ikke, vil enten den første eller andre koden etter `?` bli kjørt.
 
-We don't assign a result to a variable here. Instead, we execute different code depending on the condition.
+Her satt vi ikke resultatet til en variabel, men kjørte forskjellig kode avhengig av påstanden.
 
-**We don't recommend using the question mark operator in this way.**
+**Vi anbefaler ikke at man bruker spørsmålstegnet på denne måten.**
 
-The notation is shorter than the equivalent `if` statement, which appeals to some programmers. But it is less readable.
+Å skrive det på denne måten er kortere enn en `if` påstand, som kan være attraktivt for mange programmerere. Men det er vanskeligere å lese, og sees dermed på som dårlig vane.
 
-Here is the same code using `if` for comparison:
+Her kan du sammenligne den samme koden med en `if` påstand:
 
 ```js run no-beautify
-let company = prompt('Which company created JavaScript?', '');
+let selskap = prompt('Hvilket selskap lagde JavaScript?', '');
 
 *!*
 if (company == 'Netscape') {
-  alert('Right!');
+  alert('Stemmer!');
 } else {
-  alert('Wrong.');
+  alert('Feil.');
 }
 */!*
 ```
 
-Our eyes scan the code vertically. Code blocks which span several lines are easier to understand than a long, horizontal instruction set.
+Her leser øynene våre lodrett kode istedenfor lange, vannrette linjer med kode. Dette er en bedre og mer behagelig standard for programmere å håndtere.
 
-The purpose of the question mark operator `?` is to return one value or another depending on its condition. Please use it for exactly that. Use `if` when you need to execute different branches of code.
+Meningen med å bruke spørsmålstegnet `?` er å returnere verdier til variabler basert på en betingelse. Vennligst bruk den kun for det, og ellers bruk `if` når du skal kjøre flere forskjellige blokker med kode.

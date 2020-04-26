@@ -1,14 +1,13 @@
-importance: 2
+viktighet: 2
 
 ---
 
-# The name of JavaScript
+# JavaScript sitt navn
 
-Using the `if..else` construct, write the code which asks: 'What is the "official" name of JavaScript?'
+Ved å bruke `if..else` skal du skrive kode som spør: 'Hva er det "offisielle" navnet til JavaScript'
 
-If the visitor enters "ECMAScript", then output "Right!", otherwise -- output: "Didn't know? ECMAScript!"
+Hvis brukeren skriver inn "ECMAScript", skal tilbakemeldingen være "Korrekt!". Ellers skal den være: "Visste du det ikke? ECMAScript!"
 
 ![](ifelse_task2.svg)
 
 [demo src="ifelse_task2"]
-
