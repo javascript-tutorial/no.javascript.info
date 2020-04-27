@@ -1,14 +1,11 @@
-
-
 ```js run
-let value = prompt('Skriv inn et tall', 0);
+let value = prompt("Type a number", 0);
 
-if (verdi > 0) {
-  alert( 1 );
-} else if (verdi < 0) {
-  alert( -1 );
+if (value > 0) {
+  alert(1);
+} else if (value < 0) {
+  alert(-1);
 } else {
-  alert( 0 );
+  alert(0);
 }
 ```
-

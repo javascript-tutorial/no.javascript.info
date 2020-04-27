@@ -1,3 +1,3 @@
 ```js
-resultatt = a + b < 4 ? "Under" : "Over";
+result = a + b < 4 ? "Below" : "Over";
 ```

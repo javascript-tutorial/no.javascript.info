@@ -6,6 +6,6 @@ Vi kan kjøre koden og teste:
 
 ```js run
 if ("0") {
-  alert("Heisann");
+  alert("Hello");
 }
 ```

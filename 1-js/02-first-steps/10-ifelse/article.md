@@ -11,19 +11,19 @@ Oppgaven til en `if` påstand er å evaluere en betingelse (condition). Om resul
 Eksempel:
 
 ```js run
-let perAlder = 20
+let year = prompt('In which year was ECMAScript-2015 specification published?', '');
 
 *!*
-if (perAlder > 19) alert("Per ikke er en tenåring lengre!");
+if (year == 2015) alert( 'You are right!' );
 */!*
 ```
 
 Ofte ønsker man å kjøre flere liner med kode om en betingelse er sann. For å gjøre dette pakker vi koden inn i krøllparantes (curly brackets) - `{}`.
 
 ```js
-if (perAlder > 19) {
-  alert("Per ikke er en tenåring lengre!");
-  alert("Nå er han en ung voksen.");
+if (year == 2015) {
+  alert("That's correct!");
+  alert("You're so smart!");
 }
 ```
 
@@ -41,7 +41,7 @@ La oss friske opp hukommelsen med true/false oversettelsene fra kapittelet <info
 Med denne kunnskapen, vet vi nå at koden under aldri vil bli kjørt:
 
 ```js
-if (0) { // 0 er "falsy"
+if (0) { // 0 is falsy
   ...
 }
 ```
@@ -49,7 +49,7 @@ if (0) { // 0 er "falsy"
 ...mens denne koden alltid vil bli kjørt:
 
 ```js
-if (1) { // 1 er "truthy"
+if (0) { // 0 is falsy
   ...
 }
 ```
@@ -57,9 +57,9 @@ if (1) { // 1 er "truthy"
 Det er også lov å sette inn en allerede evaluert boolsk verdi inn i en `if` påstand:
 
 ```js
-let myndig = (alder == 17); // dobbel likhetstegn evaluerer true eller false
+let cond = (year == 2015); // equality evaluates to true or false
 
-if (myndig) {
+if (cond) {
   ...
 }
 ```
@@ -71,12 +71,15 @@ Det hender at man ofte vil kjøre én spesifikk kode hvis betingelsen i "if" på
 Eksempel:
 
 ```js run
-let alder = prompt("Hva er laveste aldersgrensen for å kjøre bil?", "");
+let year = prompt(
+  "In which year was the ECMAScript-2015 specification published?",
+  ""
+);
 
-if (alder == 18) {
-  alert("Helt korrekt!");
+if (year == 2015) {
+  alert("You guessed it right!");
 } else {
-  alert("Beklager, der tok du feil."); // alle verdier utenom 18
+  alert("How can you be so wrong?"); // any value except 2015
 }
 ```
 
@@ -87,14 +90,17 @@ Noen ganger ønsker man å teste flere betingelser. For å gjøre dette bruker v
 For eksempel:
 
 ```js run
-let alder = prompt("Hva er laveste aldersgrensen for å kjøre bil?", "");
+let year = prompt(
+  "In which year was the ECMAScript-2015 specification published?",
+  ""
+);
 
-if (alder == 18) {
-  alert("Helt korrekt!");
-} else if (alder < 18) {
-  alert("Da er du for ung");
+if (year < 2015) {
+  alert("Too early...");
+} else if (year > 2015) {
+  alert("Too late");
 } else {
-  alert("Ikke laveste aldersgrense!");
+  alert("Exactly!");
 }
 ```
 
@@ -109,18 +115,18 @@ Det hender at man ønsker å sette en variabel basert på en betingelse.
 For eksempel:
 
 ```js run no-beautify
-let tilgang;
-let alder = prompt('Hvor galmmel er du?', '');
+let accessAllowed;
+let age = prompt('How old are you?', '');
 
 *!*
-if (alder > 18) {
-  tilgang = true;
+if (age > 18) {
+  accessAllowed = true;
 } else {
-  tilgang = false;
+  accessAllowed = false;
 }
 */!*
 
-alert(tilgang);
+alert(accessAllowed);
 ```
 
 For å gjøre dette på en enklere måte, kan vi bruke noe som heter "ternary operator". Noen kaller denne også for "question mark operator".
@@ -130,7 +136,7 @@ Dettte er fordi denne operatøren brukes med et `?`-tegn. "Ternary" betyr at ope
 Syntaksen er som følger:
 
 ```js
-let resultat = betingelse ? verdi1 : verdi2;
+let result = condition ? value1 : value2;
 ```
 
 `Betingelsen` blir evaluert, og hvis den er "truthy" blir `verdi1`returnet, hvis ikke blir `verdi2` returnert.
@@ -138,7 +144,7 @@ let resultat = betingelse ? verdi1 : verdi2;
 For eksempel:
 
 ```js
-let tilgang = alder > 18 ? true : false;
+let accessAllowed = age > 18 ? true : false;
 ```
 
 Teknisk sett kan vi sette paranteser rundt `alder > 18`. Men spørsmålstegnet i en ternary operatør har en lav rang, og vil dermed bli kjørt etter `>`-sjekken.
@@ -146,9 +152,9 @@ Teknisk sett kan vi sette paranteser rundt `alder > 18`. Men spørsmålstegnet i
 Dette eksemplet vil fungere likt som det forrige:
 
 ```js
-// sjekken "alder > 18" vil bli kjørt først uansett
-// (så det er ingen grunn til å pakke den inn i parantes)
-let tilgang = alder > 18 ? true : false;
+// the comparison operator "age > 18" executes first anyway
+// (no need to wrap it into parentheses)
+let accessAllowed = age > 18 ? true : false;
 ```
 
 Allikevel anbefales det å bruke paranteser selv om det ikke er nødvendig, ettersom det gjør koden lettere å lese.
@@ -157,8 +163,8 @@ Allikevel anbefales det å bruke paranteser selv om det ikke er nødvendig, ette
 Merk: I eksempelet over hadde man egentlig ikke trengt å benytte seg av ternary operatøren, ettersom sjekken ville returnet `true/false` av seg selv.
 
 ```js
-// samme som over
-let tilgang = alder > 18;
+// the same
+let accessAllowed = age > 18;
 ```
 ````
 
@@ -169,38 +175,38 @@ Det er mulig å benytte seg av flere spørsmålstegn `?` for å returnere en ver
 For eksempel:
 
 ```js run
-let alder = prompt("alder?", 18);
+let age = prompt("age?", 18);
 
-let melding =
-  alder < 3
-    ? "Hei spedbarn!"
+let message =
+  age < 3
+    ? "Hi, baby!"
     : age < 18
-    ? "Hallo!"
+    ? "Hello!"
     : age < 100
-    ? "God dag!"
-    : "For en høy alder!";
+    ? "Greetings!"
+    : "What an unusual age!";
 
-alert(melding);
+alert(message);
 ```
 
 Det kan vøre uvant å forstå hva som foregår her med en gang. Tar vi en nærmere kikk derimot, ser vi at det bare er flere sekvenser med betingelser:
 
-1. Det første spørsmålstegnet sjekker om `alder < 3`.
-2. Om det er "true" returnerer den `'Hei spedbarn!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `alder < 18`.
-3. Om det "true", returner den `'Hallo!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `age < 100`.
-4. Om det "true", returner den `'God dag!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `'What an unusual age!'`.
+1. Det første spørsmålstegnet sjekker om `age < 3`.
+2. Om det er "true" returnerer den `'Hi, baby!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `age < 18`.
+3. Om det "true", returner den `'Hello!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `age < 100`.
+4. Om det "true", returner den `'Greetings!'`. Hvis den ikke er "true", går den til neste verdien etter kolontegenet '":"', som er `'What an unusual age!'`.
 
 Her kan du se hvordan det ville sett ut med `if..else`:
 
 ```js
-if (alder < 3) {
-  melding = "Hei spedbarn!";
-} else if (alder < 18) {
-  melding = "Hallo!";
-} else if (alder < 100) {
-  melding = "God dag!";
+if (age < 3) {
+  message = "Hi, baby!";
+} else if (age < 18) {
+  message = "Hello!";
+} else if (age < 100) {
+  message = "Greetings!";
 } else {
-  melding = "For en høy alder!";
+  message = "What an unusual age!";
 }
 ```
 
@@ -209,11 +215,11 @@ if (alder < 3) {
 Det hender at spørsmålstegnet `?` blir brukt som et alternativ for `if`:
 
 ```js run no-beautify
-let selskap = prompt('Hvilket selskap lagde JavaScript?', '');
+let company = prompt('Which company created JavaScript?', '');
 
 *!*
-(selskap == 'Netscape') ?
-   alert('Stemmer!') : alert('Feil.');
+(company == 'Netscape') ?
+   alert('Right!') : alert('Wrong.');
 */!*
 ```
 
@@ -228,13 +234,13 @@ Her satt vi ikke resultatet til en variabel, men kjørte forskjellig kode avheng
 Her kan du sammenligne den samme koden med en `if` påstand:
 
 ```js run no-beautify
-let selskap = prompt('Hvilket selskap lagde JavaScript?', '');
+let company = prompt('Which company created JavaScript?', '');
 
 *!*
 if (company == 'Netscape') {
-  alert('Stemmer!');
+  alert('Right!');
 } else {
-  alert('Feil.');
+  alert('Wrong.');
 }
 */!*
 ```

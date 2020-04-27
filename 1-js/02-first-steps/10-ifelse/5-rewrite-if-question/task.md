@@ -8,8 +8,8 @@ Gjør om denne `if` påstanden ved bruk av ternary operatøren`'?'`:
 
 ```js
 if (a + b < 4) {
-  resultat = "Under";
+  result = "Below";
 } else {
-  resultat = "Over";
+  result = "Over";
 }
 ```

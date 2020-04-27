@@ -8,6 +8,6 @@ Vil `alert` bli vist?
 
 ```js
 if ("0") {
-  alert("Heisann");
+  alert("Hello");
 }
 ```
