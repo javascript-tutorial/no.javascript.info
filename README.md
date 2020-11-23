@@ -1,10 +1,15 @@
 # Den moderne JavaScript Opplæringsdelen på Norsk
 
+<<<<<<< HEAD
 Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.info> på Norsk.
+=======
+This repository hosts the English content of the Modern JavaScript Tutorial, published in [https://javascript.info](https://javascript.info).
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
 
 
 **Slik kan du bidra:**
 
+<<<<<<< HEAD
 - Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
@@ -14,6 +19,9 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
     - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
     
 Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
+=======
+See <https://javascript.info/translate> for the details.
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
 
 Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
 
@@ -33,9 +41,15 @@ Mappen sitt har navnet `N-url`, hvor `N` - står for nummer for hvordan (artikle
 
 Hver mappe har en av følgende filer:
 
+<<<<<<< HEAD
 - `index.md` for en seksjon,
 - `article.md` for en artikkel,
 - `task.md` for en oppgave (+`solution.md` med løsningsteksten hvis det finnes en).
+=======
+  - `index.md` stands for a chapter
+  - `article.md` stands for an article
+  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
 
 En fil starter med `# Tittel overskrift`, og så er teksten skrevet i Markdown-lignende format, redigerbar i hvilken som helst text-editor.
 
@@ -113,6 +127,7 @@ Noen filer, vanligvis oppgaver, har YAML metadata definert i toppen, markert med
 importance: 5
 
 ---
+<<<<<<< HEAD
 ...
 ```
 
@@ -133,3 +148,7 @@ Vennligst ikke oversett eller fjern `[#...]` delen, dette er for URL ankerpunkte
 Du kan kjøre opplæringsdelens server lokalt for å se hvordan oversettelsene dine ser ut.
 
 Serveren og installasjonsinstrukser kan finnes her: <https://github.com/javascript-tutorial/server>. 
+=======
+♥  
+Ilya Kantor @iliakan
+>>>>>>> 23da191b58643387783f38e999f5b05be87d3d93
