@@ -2,15 +2,14 @@ importance: 5
 
 ---
 
-# Rewrite 'if' into '?'
+# Gjør om 'if' til '?'
 
-Rewrite this `if` using the ternary operator `'?'`:
+Gjør om denne `if` påstanden ved bruk av ternary operatøren`'?'`:
 
 ```js
 if (a + b < 4) {
-  result = 'Below';
+  result = "Below";
 } else {
-  result = 'Over';
+  result = "Over";
 }
 ```
-

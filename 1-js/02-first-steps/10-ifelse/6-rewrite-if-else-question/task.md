@@ -2,22 +2,22 @@ importance: 5
 
 ---
 
-# Rewrite 'if..else' into '?'
+# Gjør om 'if..else' til '?'
 
-Rewrite `if..else` using multiple ternary operators `'?'`.
+Gjør om `if..else` påstanden under ved bruk av spørsmålstegn `'?'`.
 
-For readability, it's recommended to split the code into multiple lines.
+Det er anbefalt å dele opp koden inn i flere linjer for bedre lesbarhet.
 
 ```js
 let message;
 
-if (login == 'Employee') {
-  message = 'Hello';
-} else if (login == 'Director') {
-  message = 'Greetings';
-} else if (login == '') {
-  message = 'No login';
+if (login == "Employee") {
+  message = "Hello";
+} else if (login == "Director") {
+  message = "Greetings";
+} else if (login == "") {
+  message = "No login";
 } else {
-  message = '';
+  message = "";
 }
 ```

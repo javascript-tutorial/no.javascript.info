@@ -1,15 +1,15 @@
-importance: 2
+viktighet: 2
 
 ---
 
-# Show the sign
+# Vis en verdi
 
-Using `if..else`, write the code which gets a number via `prompt` and then shows in `alert`:
+Ved å bruke `if..else` skal du skrive kode som tar inn et tall via `prompt` og viser dette i `alert`:
 
-- `1`, if the value is greater than zero,
-- `-1`, if less than zero,
-- `0`, if equals zero.
+- `1`, hvis verdien er mer enn null,
+- `-1`, hvis verdien er mindre enn null,
+- `0`, hvis verdien er null.
 
-In this task we assume that the input is always a number.
+I denne oppgaven antar vi at input vil alltid være et tall.
 
 [demo src="if_sign"]

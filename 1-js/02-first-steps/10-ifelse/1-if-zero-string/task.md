@@ -1,14 +1,13 @@
-importance: 5
+viktighet: 5
 
 ---
 
-# if (a string with zero)
+# if (setning med 0)
 
-Will `alert` be shown?
+Vil `alert` bli vist?
 
 ```js
 if ("0") {
-  alert( 'Hello' );
+  alert("Hello");
 }
 ```
-
