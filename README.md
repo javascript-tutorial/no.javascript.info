@@ -1,10 +1,15 @@
 # Den moderne JavaScript Opplæringsdelen på Norsk
 
+<<<<<<< HEAD
 Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.info> på Norsk.
+=======
+This repository hosts the English content of the Modern JavaScript Tutorial, published in [https://javascript.info](https://javascript.info).
+>>>>>>> fb4fc33a2234445808100ddc9f5e4dcec8b3d24c
 
 
 **Slik kan du bidra:**
 
+<<<<<<< HEAD
 - Sjekk ut [Den Norske Oversettelses fremdriften](https://github.com/javascript-tutorial/no.javascript.info/issues/1) issue.
 - Velg en umarkert artikkel du har lyst til å oversette.
 - Legg til en kommentar ved artikkelens navn i issue, f.eks `An Introduction to JavaScript`.
@@ -14,6 +19,9 @@ Dette oppbevaringsstedet er vertsplass for oversettelsen av <https://javascript.
     - PR tittel burde være lik tittelen til artikkelen du oversetter, bot'en vil skrive nummeret til issue.
     
 Vær grei å la vedlikeholdere gå gjennom og merge, eller foreslå endringer i oversettelsen din.
+=======
+See <https://javascript.info/translate> for the details.
+>>>>>>> fb4fc33a2234445808100ddc9f5e4dcec8b3d24c
 
 Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, kontakt oss i [hovedrepoet](https://github.com/javascript-tutorial/en.javascript.info/issues/new).
 
@@ -21,7 +29,11 @@ Hvis vedlikeholdere ikke svarer, eller du har lyst til å bli en vedlikeholder, 
 
 🎉 Tusen takk!
 
+<<<<<<< HEAD
 Ditt navn og størrelsen på ditt bidrag vil dukke opp i "om prosjekt" delen av nettsiden når dette blir publisert.
+=======
+**You can edit the text in any editor.** The tutorial uses enhanced "markdown" format, easy to grasp. And if you want to see how it looks on-site, there's a server to run the tutorial locally at <https://github.com/javascript-tutorial/server>.
+>>>>>>> fb4fc33a2234445808100ddc9f5e4dcec8b3d24c
 
 P.S. Hele listen av språk kan finnes her <https://javascript.info/translate>.
 
@@ -33,9 +45,15 @@ Mappen sitt har navnet `N-url`, hvor `N` - står for nummer for hvordan (artikle
 
 Hver mappe har en av følgende filer:
 
+<<<<<<< HEAD
 - `index.md` for en seksjon,
 - `article.md` for en artikkel,
 - `task.md` for en oppgave (+`solution.md` med løsningsteksten hvis det finnes en).
+=======
+  - `index.md` stands for a chapter
+  - `article.md` stands for an article
+  - `task.md` stands for a task (solution must be provided in `solution.md` file as well)
+>>>>>>> fb4fc33a2234445808100ddc9f5e4dcec8b3d24c
 
 En fil starter med `# Tittel overskrift`, og så er teksten skrevet i Markdown-lignende format, redigerbar i hvilken som helst text-editor.
 
@@ -112,6 +130,7 @@ Noen filer, vanligvis oppgaver, har YAML metadata definert i toppen, markert med
 ```md
 importance: 5
 
+<<<<<<< HEAD
 ---
 ...
 ```
@@ -133,3 +152,8 @@ Vennligst ikke oversett eller fjern `[#...]` delen, dette er for URL ankerpunkte
 Du kan kjøre opplæringsdelens server lokalt for å se hvordan oversettelsene dine ser ut.
 
 Serveren og installasjonsinstrukser kan finnes her: <https://github.com/javascript-tutorial/server>. 
+=======
+---  
+♥  
+Ilya Kantor @iliakan
+>>>>>>> fb4fc33a2234445808100ddc9f5e4dcec8b3d24c
