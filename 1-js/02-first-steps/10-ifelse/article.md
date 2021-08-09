@@ -1,12 +1,24 @@
+<<<<<<< HEAD
 # Operant betinging: if, '?'
+=======
+# Conditional branching: if, '?'
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 Ofte i koden vår ønsker vi å utføre forskjellige operasjoner basert på ulike betingelser.
 
+<<<<<<< HEAD
 For å bestemme hvilken kode som skal bli kjørt basert disse ulike betingelsene, bruker vi noe som kalles for "if" påstand (eng: if-statement). Man kan også benytte seg av en (ternary) operator, som vi vil skrive mer om etterpå.
+=======
+To do that, we can use the `if` statement and the conditional operator `?`, that's also called a "question mark" operator.
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 ## "if" påstand
 
+<<<<<<< HEAD
 Oppgaven til en `if` påstand er å evaluere en betingelse (condition). Om resultatet er sant (`true`) kjøres koden.
+=======
+The `if(...)` statement evaluates a condition in parentheses and, if the result is `true`, executes a block of code.
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 Eksempel:
 
@@ -68,7 +80,11 @@ if (cond) {
 
 Det hender at man ofte vil kjøre én spesifikk kode hvis betingelsen i "if" påstanden stemmer, og ellers en annen kode hvis den ikke stemmer. For å gjøre dette bruker man noe som kalles for en "else statement". Denne kjøres uansett hvis "if" påstanden er false.
 
+<<<<<<< HEAD
 Eksempel:
+=======
+The `if` statement may contain an optional "else" block. It executes when the condition is falsy.
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 ```js run
 let year = prompt(
@@ -108,7 +124,11 @@ Fremgangsmåten til JavaScript er å først sjekke om `alder == 18)`. Hvis det e
 
 Merk: Det kan være flere `else if` påstander, men bare en `else` påstand.
 
+<<<<<<< HEAD
 ## Ternary operatør '?'
+=======
+## Conditional operator '?'
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 Det hender at man ønsker å sette en variabel basert på en betingelse.
 
@@ -129,11 +149,17 @@ if (age > 18) {
 alert(accessAllowed);
 ```
 
+<<<<<<< HEAD
 For å gjøre dette på en enklere måte, kan vi bruke noe som heter "ternary operator". Noen kaller denne også for "question mark operator".
 
 Dettte er fordi denne operatøren brukes med et `?`-tegn. "Ternary" betyr at operatøren har tre "operander", som er tegnene som brukes i uttrykket. Denne er faktisk den eneste operatøren i JavaScript som har tre operander.
 
 Syntaksen er som følger:
+=======
+The so-called "conditional" or "question mark" operator lets us do that in a shorter and simpler way.
+
+The operator is represented by a question mark `?`. Sometimes it's called "ternary", because the operator has three operands. It is actually the one and only operator in JavaScript which has that many.
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 ```js
 let result = condition ? value1 : value2;
@@ -147,7 +173,11 @@ For eksempel:
 let accessAllowed = age > 18 ? true : false;
 ```
 
+<<<<<<< HEAD
 Teknisk sett kan vi sette paranteser rundt `alder > 18`. Men spørsmålstegnet i en ternary operatør har en lav rang, og vil dermed bli kjørt etter `>`-sjekken.
+=======
+Technically, we can omit the parentheses around `age > 18`. The question mark operator has a low precedence, so it executes after the comparison `>`.
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 Dette eksemplet vil fungere likt som det forrige:
 
@@ -227,7 +257,11 @@ Avhengig om påstanden `selskap == 'Netscape` stemmer eller ikke, vil enten den 
 
 Her satt vi ikke resultatet til en variabel, men kjørte forskjellig kode avhengig av påstanden.
 
+<<<<<<< HEAD
 **Vi anbefaler ikke at man bruker spørsmålstegnet på denne måten.**
+=======
+**It's not recommended to use the question mark operator in this way.**
+>>>>>>> bc08fd1b32285304b14afea12a9deaa10d13452b
 
 Å skrive det på denne måten er kortere enn en `if` påstand, som kan være attraktivt for mange programmerere. Men det er vanskeligere å lese, og sees dermed på som dårlig vane.
 
