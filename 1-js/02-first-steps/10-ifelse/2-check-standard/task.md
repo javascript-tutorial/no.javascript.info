@@ -6,7 +6,11 @@ viktighet: 2
 
 Ved å bruke `if..else` skal du skrive kode som spør: 'Hva er det "offisielle" navnet til JavaScript'
 
+<<<<<<< HEAD
 Hvis brukeren skriver inn "ECMAScript", skal tilbakemeldingen være "Korrekt!". Ellers skal den være: "Visste du det ikke? ECMAScript!"
+=======
+If the visitor enters "ECMAScript", then output "Right!", otherwise -- output: "You don't know? ECMAScript!"
+>>>>>>> 035c5267ba80fa7b55878f7213cbde449b4092d9
 
 ![](ifelse_task2.svg)
 
